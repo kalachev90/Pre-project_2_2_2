@@ -16,7 +16,7 @@ public class CarService {
     );
 
     public static List<Car> carsCount(Integer count) {
-        if (count > 0 && count < carList.size()) {
+        if (count >= 0 && count < carList.size()) {
             return carList.subList(0, count);
         }
         return carList;
